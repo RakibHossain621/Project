@@ -1,4 +1,38 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+/* Css variable */
+:root{
+  --primary-color:#222f5a;
+  --border-color:#4e597b;
+  --white-color:#fff;
+  --btn-color:#0d6efd;
+  --primary-font: 'Nunito', sans-serif;
+}
+
+/* Resuseable class */
+.container{
+  max-width: 1280px;
+  padding: 1em;
+  margin: 0 auto;
+}
+
+.app_btn{
+  padding: 15px 50px;
+  background-color: var(--btn-color);
+  color: var(--white-color);
+  font-size: 1em;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.app_btn:hover{
+  background-color: #0000;
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -10,84 +44,111 @@ html {
   }
   
   /* Global Styles */
-  
-  h1 {
-    font-size: 50px;
-    line-height: 64px;
-    color: #222;
-  }
-  
-  h2 {
-    font-size: 46px;
-    line-height: 54px;
-    color: #222;
-  }
-  
-  h4 {
-    font-size: 20px;
-    color: #222;
-  }
-  
-  h6 {
-    font-weight: 700;
-    font-size: 12px;
-  }
-  
-  p {
-    font-size: 16px;
-    color: #465b52;
-    margin: 15px 0 20px 0;
-  }
-  
-  .section-p1 {
-    padding: 40px 80px;
-  }
-  
-  .section-m1 {
-    margin: 40px 0;
+  h1,h2,h3,h4,h5,h6,a,p,span,button,input,textarea,ul,li{
+    font-family: var(--primary-font);
   }
 
-  button.normal{
-    font-size: 14px;
-    font-weight: 600;
-    padding: 15px 30px;
-    color: #000;
-    background-color: #fff;
-    border-radius: 4px;
-    cursor: pointer;
-    border: none;
-    outline: none;
-    transition: 0.2s;
-  }
-  button.white{
-    font-size: 13px;
-    font-weight: 600;
-    padding: 11px 18px;
-    color:#fff;
-    background-color: transparent;
-    cursor: pointer;
-    border: 1px solid #fff;
-    outline: none;
-    transition: 0.2s;
-  }
-  
-  body {
-    width: 100%;
-  }
-  #Header{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 10px 60px;
-  }
-  .top-header{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  #Header .top-header ul li{
-    padding: 0 20px;
-    list-style: none;
-    text-decoration: none;
-    flex-direction: column;
-  }
+  /* Header Css Start Here */
+  .header {
+    background: var(--primary-color);
+    border: 1px solid var(--border-color);
+}
+
+.header .app_container{
+  display: flex;
+  align-items: center;
+}
+
+.logo_section_left {
+  width: 406px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 138px;
+  border-right: 1px solid var(--border-color);
+}
+
+.logo_section_left .logo {
+  font-size: 32px;
+  text-decoration: none;
+  color: var(--white-color);
+  font-weight: 700;
+}
+
+.navigation_top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  border-bottom: 1px solid var(--border-color);
+  padding: 0px 22px;
+  padding-bottom: 12px;
+}
+
+.navigation_right {
+  width: 100%;
+}
+
+.navigation_contact {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.navigation_contact p {
+  color: var(--white-color);
+  font-size: 1em;
+  font-weight: 500;
+}
+
+.navigation_social {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.navigation_social p {
+  color: var(--white-color);
+  font-size: 1em;
+  font-weight: 500;
+}
+
+.social_icon {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.social_icon a {
+  color: var(--white-color);
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+.navbar ul {
+  display: flex;
+  list-style: none;
+  align-items: center;
+  gap: 40px;
+  padding: 10px;
+  margin-top: 5px;
+}
+
+.navbar ul li a {
+  font-size: 1em;
+  color: var(--white-color);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.btn_wrapper{
+  margin-top: 5px;
+}
+
+
+/* Header Css End Here */
