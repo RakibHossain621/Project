@@ -421,14 +421,19 @@ background-repeat: no-repeat;
 .icon_row i{
   color: var(--btn-color);
   font-size: 20px;
-} 
-
+}
 .text_message{
+  flex: 1;
   border: 2px solid #e9ebef;
   padding: 20px;
   background: var(--white-color);
   border-radius: 10px;
-  width: 100%;
+  width: 80%;
   outline: none;
   margin-bottom: 20px;
+}
+.text_icon{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
