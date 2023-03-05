@@ -473,3 +473,43 @@ background-repeat: no-repeat;
 }
 
 /* contact section End */
+
+.team_text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.team-wraper {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-top: 30px;
+  flex-wrap: wrap;
+}
+
+.single_person {
+  width: 24%;
+}
+
+.single_person img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.team_content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 20px;
+  transition: all 300s ease-in-out;
+  padding: 10px 25px;
+}
+
+.team_content:hover{
+  background-color: var(--btn-color);
+}
