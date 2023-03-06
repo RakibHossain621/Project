@@ -473,7 +473,7 @@ background-repeat: no-repeat;
 }
 
 /* contact section End */
-
+/* team member start */
 .team_text {
   display: flex;
   justify-content: center;
@@ -481,7 +481,9 @@ background-repeat: no-repeat;
   flex-direction: column;
   gap: 10px;
 }
-
+.team{
+  padding-bottom: 20%;
+}
 .team-wraper {
   display: flex;
   align-items: center;
@@ -510,6 +512,110 @@ background-repeat: no-repeat;
   padding: 10px 25px;
 }
 
-.team_content:hover{
+.team_content:hover {
   background-color: var(--btn-color);
+}
+/* team member end*/
+/* adverstart  sction start */
+.advers{
+  background-color: var(--btn-color);
+}
+.wraper_adverst{
+  background-color: var(--white-color);
+  /* padding: 50px 20px; */
+  height: 250px;
+  margin-top: -20%;
+  border-radius: 20px;
+  box-shadow: 0px 2px 5px 1px #091d3e8a;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.icons-wrap i{
+  font-size: 60px;
+  color: var(--white-color);
+}
+.middle_icon{
+  background-color: var(--btn-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+}
+.icons-wrap{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: -10%;
+}
+.icons-wrap p{
+  max-width:70% ;
+}
+
+.scriber_wraper{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border:1px solid var(--white-color);
+  width: 50%;
+  padding:10px;
+  border-radius: 10px;
+}
+/* input section start */
+.scriber_wraper input{
+  flex:1;
+  border: none;
+  outline: none;
+  background-color: transparent;
+}
+.scriber_wraper input::placeholder{
+  color: var(--white-color);
+}
+.scriber_wraper button{
+  margin-top: 0px;
+}
+/* input section end */
+.suscribe{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 100px;
+}
+.suscribe h1{
+  max-width: 40%;
+  color: var(--white-color);
+  font-size: 32px;
+  font-weight:bold;
+}
+/* adverstart  sction end */
+.offer_wraper{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.offer_wraper h1{
+  max-width: 40%;
+  font-size: 32px;
+  text-align: center;
+}
+.offer_wraper h6{
+  font-size: 18px;
+  color: var(--btn-color);
+  font-weight: bold;
+}
+.overlay_img{
+  background-color: linear-gradient(#000, #000);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 24%;
+  height: 235px;
+}
+.offer_flex{
+  position: relative;
 }
